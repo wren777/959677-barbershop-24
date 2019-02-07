@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский" </title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+
+  <body class="inner-page">
+
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"> 
@@ -36,32 +41,32 @@
     <legend>Производители:</legend>
     <ul>
         <li class="filter-option"> 
-            <input class="visually-hidden filter=input-checkbox" type="checkbox" 
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" 
             name="baxter-of-California" id="filter-baxter-of-California" checked>
             <label for="filter-baxter-of-California">Baxter of California</label>
         </li>
         <li class="filter-option">
-                <input class="visually-hidden filter=input-checkbox" type="checkbox" 
+                <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" 
                 name="Mr-Natty" id="filter-Mr-Natty">
                 <label for="filter-Mr-Natty">Mr Natty</label>
         </li>
         <li class="filter-option">
-                <input class="visually-hidden filter=input-checkbox" type="checkbox" 
+                <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" 
                 name="Suavecito" id="filter-Suavecito" checked>
                 <label for="filter-Suavecito">Suavecito</label>
             </li>
             <li class="filter-option">
-                    <input class="visually-hidden filter=input-checkbox" type="checkbox" 
+                    <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" 
                 name="Malin+Goetz" id="filter-Malin+Goetz">
                 <label for="filter-Malin+Goetz">Malin+Goetz</label>
                 </li>
                 <li class="filter-option">
-                        <input class="visually-hidden filter=input-checkbox" type="checkbox" 
-                        name="Murra's" id="filter-Murra's">
-                        <label for="filter-Murra's">Murra's</label>
+                        <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" 
+                        name="Murrays" id="filter-Murrays" disabled>
+                        <label for="filter-Murrays">Murray's</label> 
                     </li>
                     <li class="filter-option">
-                            <input class="visually-hidden filter=input-checkbox" type="checkbox" 
+                            <input class="visually-hidden filter-input filter-input-checkbox"  type="checkbox" 
                             name="American-Crew" id="filter-American-Crew" checked>
                             <label for="filter-American-Crew">American Crew</label>
                         </li>
@@ -71,15 +76,15 @@
     <legend>Группы товаров:</legend>
 <ul> 
     <li class="filter-option">
-    <input class="visually-hidden filter-input-radio" type="radio" 
+    <input class="visually-hidden filter-input filter-input-radio" type="radio" 
     name="product-group" value="shaving" id="filter-shave">
     <label for="filter-shave">Бритвенные принадлежности</label></li>
     <li class="filter-option">
-    <input class="visually-hidden filter-input-radio" type="radio" 
+    <input class="visually-hidden filter-input filter-input-radio" type="radio" 
     name="product-group" value="hair-care" id="filter-care">
     <label for="filter-care">Средства для ухода</label></li>
     <li class="filter-option">
-    <input class="visually-hidden filter-input-radio" type="radio" 
+    <input class="visually-hidden filter-input filter-input-radio" type="radio" 
     name="product-group" value="accessories" id="filter-accessories">
     <label for="filter-accessories">Аксессуары</label></li>
 </ul>
@@ -101,11 +106,13 @@
                     </p>
                     </a>
                     <p class="catalog-item-price">
-                        <b>2 990 ₽</b>
+                        <b>2 900 ₽</b>
                         <a class="button" href="#">Купить</a>
                     </p>
+                 </li>
+                 <li class="catalog-item">
+                    <a href="catalog-item.html">
                     <h3>
-                            <a href="catalog-item.html">
                             <span class="catalog-category">Увлажняющий кондиционер</span>
                             <span class="catalog-item-title">«Baxter of California»</span>
                             </a>
@@ -114,10 +121,13 @@
                             <img src="img/product-5.jpg" width="228" height="165" alt="Набор для путишествий «Baxter of California»">
                         </p>
                         <p class="catalog-item-price">
-                            <b>790 ₽</b>
+                            <b>750 ₽</b>
                             <a class="button" href="#">Купить</a>
+                            </p>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="catalog-item.html">
                             <h3>
-                                    <a href="catalog-item.html">
                                     <span class="catalog-category">Гель для волос</span>
                                     <span class="catalog-item-title">«Suavecito»</span>
                                     </a>
@@ -128,8 +138,11 @@
                                 <p class="catalog-item-price">
                                     <b>290 ₽</b>
                                     <a class="button" href="#">Купить</a>
+                                    </p>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="catalog-item.html">
                                     <h3>
-                                            <a href="catalog-item.html">
                                             <span class="catalog-category">Глина для укладкт волос</span>
                                             <span class="catalog-item-title">«American crew»</span>
                                             </a>
@@ -140,8 +153,11 @@
                                         <p class="catalog-item-price">
                                             <b>500 ₽</b>
                                             <a class="button" href="#">Купить</a>
+                                            </p>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="catalog-item.html">
                                             <h3>
-                                                    <a href="catalog-item.html">
                                                     <span class="catalog-category">Гель для волос</span>
                                                     <span class="catalog-item-title">«American crew»</span>
                                                     </a>
@@ -152,6 +168,10 @@
                                                 <p class="catalog-item-price">
                                                     <b>300 ₽</b>
                                                     <a class="button" href="#">Купить</a>
+                                                    </p>
+                        </li>
+                        <li class="catalog-item">
+                            <a href="catalog-item.html">
                                                     <h3>
                                                             <a href="catalog-item.html">
                                                             <span class="catalog-category">Набор для бритья</span>
@@ -162,8 +182,10 @@
                                                             <img src="img/product-9.jpg" width="228" height="165" alt="Набор для путишествий «Baxter of California»">
                                                         </p>
                                                         <p class="catalog-item-price">
-                                                            <b>3 990 ₽</b>
+                                                            <b>3 900 ₽</b>
                                                             <a class="button" href="#">Купить</a>
+                                                            </p>
+                                                        </li>
                 </li>
              </ul>
              <ul class="pagination-list">

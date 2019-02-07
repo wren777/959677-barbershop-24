@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский" </title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo"> 
@@ -27,12 +30,13 @@
 <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="index.html">Магазин</a></li>
-        <li class="breadcrunbs-current">Набор для путишествий «Baxter of California»</li>
+        <li><a href="index.html">Средства для ухода</a></li>
+        <li class="breadcrumbs-current">Набор для путишествий «Baxter of California»</li>
      </ul>
      <section class="product-photos">
          <h2 class="visually-hidden">Изображение товара</h2> 
          <p class="product-photo-full">
-         <img src="img/product-big.jpg" width="140" height="149" alt="Фото всего набора">
+         <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
         </p>
         <ul class="product-photo-preview">
         <li><img src="img/product-1.jpg" width="140" height="149" alt="Фото в анфас"></li>
@@ -58,6 +62,7 @@
          <li>Удобная кожанная косметичка (50 мл)</li>
      </ul>
         </section>
+</main>
         <footer class="main-footer">
                 <p class="footer-contacts">
                    БАРБЕРШОП «БОРОДИНСКИЙ»<br>
@@ -78,6 +83,29 @@
                <a class="button" href="https://htmlacademy.ru">HTML Academy</a> 
                </p>
               </footer>
-</main>
+              <section class="modal modal-login">
+                <h2>Личный кабинет</h2>
+                <p>Введите свой логин и пароль.</p>
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <label class="visually-hidden" for="user-login">Логин</label>
+                    <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+                  </p>
+                  <p>
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                  </p>
+                  <p class="login-password-info">
+                    <label class="login-checkbox">
+                      <input type="checkbox" name="remember" class="visually-hidden">
+                      <span class="checkbox-indicator"></span>
+                      Запомните меня
+                    </label>
+                    <a class="restore" href="#">Я забыл пароль!</a>
+                  </p>
+                  <button class="button" type="submit">Войти</button>
+                </form>
+                <button class="modal-close" type="button">Закрыть</button>
+              </section>
   </body>
 </html>
